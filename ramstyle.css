@@ -1,0 +1,283 @@
+/* General styles */
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0; /* Move the sidenav to the right side */
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px; /* Close button moves to left on right sidenav */
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style for the hamburger button */
+#hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* Position the hamburger on the right side */
+  top: 20px; /* You can adjust the vertical position as needed */
+  z-index: 2;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 768px) {
+  .sidenav a {font-size: 20px;} /* Adjust font size for smaller screens */
+}
+/* nav barcode end */
+
+
+*{
+    padding: 0;
+    margin: 0; 
+   
+}
+
+body{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  
+}
+
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: yellow;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+
+.tag{
+    text-align: center;
+    padding: 5%;
+    color:blue;
+    
+}
+
+
+.one{
+   
+    
+    display:block; 
+    text-align: center;
+    /* background-color:blue; */
+    height: 500px;
+
+    
+}
+.services{
+     text-align: center;
+     font-size: x-large;
+     color:blue;
+    
+     
+}
+/* contact header tag */
+.cont_header{
+  text-align: center;
+  margin-top:2px;
+  padding: 1px;
+}
+
+/*-- catagories---*/
+.type{
+    color: #000;
+}
+
+.selector {
+    margin-top: 10px; /* applying different margins to different sides */
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+
+
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.end{
+     /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding:25px;
+    background-color: yellow;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-bottom: 5px;
+  text-align: center;
+} 
+
+.category-tag {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    
+  }
+  
+  .red {
+    background-color: red;
+   
+  }
+  
+  .blue {
+    background-color: navy;
+  }
+  
+  .green {
+    background-color: green;
+  }
+
+
+/* detail*/
+  .detail{
+    font-size: xx-large;
+    /* background-color: rgb(52, 225, 255); */
+    color:rgb(0, 0, 0);
+    width: 70%; 
+    height: 60%; 
+    display: inline-block;
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+    font-family: "Meera Inimai", serif;
+        font-weight: 400;
+        font-style: normal;
+  }
+ 
+  .meera-inimai-regular {
+    font-family: "Meera Inimai", serif;
+    font-weight: 400;
+    font-style: small;
+    font-size: x-large;
+  }
+  
+  
+.size{
+    font-size: X-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.location{
+    color: #000;
+    display: inline-block;
+}
+.fotter{
+    font-size: small;
+    text-align: right;
+}
+
+
+/*    silde testing  */
+/* Style for the slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide all slides by default */
+.slide {
+  display: none;
+}
+
+/* Style for images inside the slides */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation arrows */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
